@@ -26,7 +26,7 @@ public class HappemApp extends Application {
             for (Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
-                Log.d("MATTEO MATTEO KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
             }
         } catch (NameNotFoundException e) {
 

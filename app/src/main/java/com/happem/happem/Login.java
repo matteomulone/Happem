@@ -2,9 +2,10 @@ package com.happem.happem;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 
-public class Login extends Activity {
+public class Login extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

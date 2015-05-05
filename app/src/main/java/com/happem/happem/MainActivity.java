@@ -24,6 +24,7 @@ public class MainActivity extends FragmentActivity {
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getIntent();
         setContentView(com.happem.happem.R.layout.main_activity);
         pagerSlidingTabStrip1 = (PagerSlidingTabStrip) findViewById(com.happem.happem.R.id.slidingTabStrip_1);
         viewPager1 = (ViewPager) findViewById(com.happem.happem.R.id.viewPager_1);
@@ -32,16 +33,17 @@ public class MainActivity extends FragmentActivity {
 
         profile = (ImageButton) findViewById(com.happem.happem.R.id.profile_button);
 
-        profile.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Login.class);
-                startActivity(intent);
-                finish();
-            }
-
-        });
+//        TODO profile page
+//        profile.setOnClickListener(new OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, Profile.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//
+//        });
 
     }
 
