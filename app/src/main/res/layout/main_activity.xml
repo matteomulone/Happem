@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#F69738">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.happem.happem.PagerSlidingTabStrip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slidingTabStrip_1"
+            app:slidingBlock="@drawable/pager_sliding_block">
+            <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+                <!--<TextView-->
+	                <!--style="@style/text_slidingTabTitle_logo" />-->
+                <TextView
+	                style="@style/text_slidingTabTitle_friends"/>
+                <TextView
+	                style="@style/text_slidingTabTitle_notification"/>
+                <!--<TextView-->
+                    <!--style="@style/text_slidingTabTitle_profile"/>-->
+            </LinearLayout>
+        </com.happem.happem.PagerSlidingTabStrip>
+
+            <ImageButton
+                android:id="@+id/profile_button"
+                style="@style/text_slidingTabTitle_profile"
+                android:layout_gravity="end"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <include layout="@layout/include_shadow_down"/>
+            <include layout="@layout/include_shadow_up"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
