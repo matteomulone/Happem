@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="theme">#ff00bfff</color>
+    <color name="theme">#F69738</color>
+    <color name="PrimaryOrange">#F69738</color>
+    <color name="DarkOrange">#F06722</color>
+    <color name="background">#333333</color>
 </resources>

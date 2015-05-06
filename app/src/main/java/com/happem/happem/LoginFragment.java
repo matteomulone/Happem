@@ -69,7 +69,7 @@ public class LoginFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //getActivity () perchè sto usando i fragment
+        //getActivity () perche sto usando i fragment
         FacebookSdk.sdkInitialize(getActivity().getApplicationContext());
         mCallbackManagers = CallbackManager.Factory.create();
         mTokenTracker = new AccessTokenTracker() {
